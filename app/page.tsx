@@ -1,4 +1,9 @@
 import React from "react";
+import Main from "./components/Main";
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <>
+      <Main />
+    </>
+  );
 }

@@ -1,8 +1,10 @@
+import * as S from "./styles";
+
 const Main = () => {
   return (
-    <main>
+    <S.Container>
       <h1>Main</h1>
-    </main>
+    </S.Container>
   );
 };
 
