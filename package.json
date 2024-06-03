@@ -1,0 +1,33 @@
+{
+  "name": "frontend-challenge-experis-brasil",
+  "version": "1.0.0",
+  "description": "frontend-challenge-experis-brasil",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnoldosilva/frontend-challenge.git"
+  },
+  "author": "Arnoldo Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnoldosilva/frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/arnoldosilva/frontend-challenge#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}
