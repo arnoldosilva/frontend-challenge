@@ -4,7 +4,8 @@
   "description": "frontend-challenge-experis-brasil",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"npm run db\"",
+    "db": "node api/index.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -21,13 +22,18 @@
   },
   "homepage": "https://github.com/arnoldosilva/frontend-challenge#readme",
   "dependencies": {
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.14.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "next": "^14.2.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "concurrently": "^8.2.2",
+    "faker": "^5.5.3",
+    "json-graphql-server": "^3.0.1",
     "typescript": "^5.4.5"
   }
 }
