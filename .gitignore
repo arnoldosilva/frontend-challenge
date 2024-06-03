@@ -81,6 +81,7 @@ web_modules/
 
 # Next.js build output
 .next
+.next/trace
 out
 
 # Nuxt.js build / generate output
@@ -131,4 +132,4 @@ dist
 graphql_schema.json
 .graphql_cache
 .graphql_ppx_cache
-.next/trace
+
