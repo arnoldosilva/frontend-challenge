@@ -25,7 +25,8 @@
     "**/*.tsx",
     "db.js",
     "api/index.js",
-    "api/db.js"
+    "api/db.js",
+    ".jest/setup.ts"
   ],
   "exclude": ["node_modules"]
 }
