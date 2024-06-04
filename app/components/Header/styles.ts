@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 100px;
 `;
 
 export const LogoName = styled.h1`

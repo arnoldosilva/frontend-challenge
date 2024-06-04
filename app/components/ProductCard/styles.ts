@@ -1,5 +1,14 @@
 import { styled } from "styled-components";
 
+import { Saira } from "next/font/google";
+
+export const saira_init = Saira({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--saira",
+  weight: "600",
+});
+
 export const Container = styled.button`
   width: 100%;
   height: 100%;
@@ -24,6 +33,8 @@ export const Image = styled.img`
 export const Price = styled.span`
   color: #605f66;
   font-size: 1.5em;
+  font-family: var(--saira);
+  font-weight: 600;
 `;
 
 export const Content = styled.div`

@@ -1,13 +1,13 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
 
-import { Jersey_10 } from "next/font/google";
+import { Saira } from "next/font/google";
 
-export const jersey_10_init = Jersey_10({
+export const saira_init = Saira({
   subsets: ["latin"],
   display: "swap",
-  variable: "--jersey_10",
-  weight: "400",
+  variable: "--saira",
+  weight: "100",
 });
 
 const GlobalStyles = createGlobalStyle`

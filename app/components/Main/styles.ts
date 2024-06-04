@@ -6,6 +6,6 @@ export const Container = styled.main`
   display: flex;
   gap: 20px;
   flex-direction: column;
-  height: 100vh;
-  padding: 20px;
+  flex-grow: 1;
+  padding: 20px 100px;
 `;

@@ -41,20 +41,22 @@ export default () => {
       }}
       defaultValue={values[0]}
       options={values}
-      formatOptionLabel={({ category }) => (
-        <div
-          style={{
-            display: "flex",
-            flexGrow: 1,
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: 200,
-            fontSize: 14,
-          }}
-        >
-          <span>{category}</span>
-        </div>
-      )}
+      formatOptionLabel={formatOptionLabel}
     />
   );
 };
+
+const formatOptionLabel = ({ category }) => (
+  <div
+    style={{
+      display: "flex",
+      flexGrow: 1,
+      justifyContent: "space-between",
+      alignItems: "center",
+      width: 200,
+      fontSize: 14,
+    }}
+  >
+    <span>{category}</span>
+  </div>
+);
