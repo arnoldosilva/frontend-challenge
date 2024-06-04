@@ -1,47 +1,60 @@
-import React, { CSSProperties } from "react";
+import { fetchCategories } from "@/services/fetchCategories";
+import { useProductsStore } from "@/store/useProductsStore";
+import React, { useEffect, useMemo } from "react";
 
 import Select from "react-select";
 
-interface Option {
-  label: string;
-  value: string;
+interface Categories {
+  category: string;
 }
 
-const options = [
-  { label: "Organizar por", value: "chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
-];
+export default () => {
+  const data = async () => await fetchCategories();
+  const { categories } = useProductsStore();
+  useEffect(() => {
+    data();
+  }, []);
 
-export default () => (
-  <Select
-    styles={{
-      control(base, props) {
-        return {
-          ...base,
-          backgroundColor: "transparent",
-          border: 0,
-          "::selected": {
-            border: 0,
-          },
-        };
+  const values = useMemo(
+    () => [
+      {
+        category: "Organizar por",
       },
-    }}
-    defaultValue={options[1]}
-    options={options}
-    formatOptionLabel={({ label, value }) => (
-      <div
-        style={{
-          display: "flex",
-          flexGrow: 1,
-          justifyContent: "space-between",
-          alignItems: "center",
-          width: 200,
-          fontSize: 14,
-        }}
-      >
-        <span>{label}</span>
-      </div>
-    )}
-  />
-);
+      ...categories,
+    ],
+    [categories]
+  );
+
+  return (
+    <Select
+      styles={{
+        control(base, props) {
+          return {
+            ...base,
+            backgroundColor: "transparent",
+            border: 0,
+            "::selected": {
+              border: 0,
+            },
+          };
+        },
+      }}
+      defaultValue={values[0]}
+      options={values}
+      formatOptionLabel={({ category }) => (
+        <div
+          style={{
+            display: "flex",
+            flexGrow: 1,
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: 200,
+            fontSize: 14,
+          }}
+        >
+          <span>{category}</span>
+        </div>
+      )}
+    />
+  );
+};

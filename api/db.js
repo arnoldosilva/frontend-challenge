@@ -11,7 +11,7 @@ const baseProducts = [
     category: "mugs",
   },
   {
-    name: "Camiseta not today.",
+    name: "Camiseta not today",
     description: faker.lorem.paragraph(),
     image_url:
       "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
