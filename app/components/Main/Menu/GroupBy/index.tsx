@@ -42,6 +42,7 @@ export default () => {
       defaultValue={values[0]}
       options={values}
       formatOptionLabel={formatOptionLabel}
+      isSearchable={false}
     />
   );
 };
