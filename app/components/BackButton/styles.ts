@@ -1,10 +1,16 @@
 import { styled } from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.button`
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
+  max-width: 120px;
+  background-color: transparent;
+  &:hover {
+    background-color: "transparent";
+  }
+  border: none;
+  cursor: pointer;
 `;
 
 export const title = styled.h3`
