@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 
 export const Container = styled.footer`
   background-color: #fff;
-  height: 50;
-  width: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
 `;

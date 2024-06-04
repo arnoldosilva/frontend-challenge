@@ -1,5 +1,15 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
+
+import { Jersey_10 } from "next/font/google";
+
+export const jersey_10_init = Jersey_10({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--jersey_10",
+  weight: "400",
+});
+
 const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
@@ -13,7 +23,8 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
   body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #605f66;
   }
 `;
 

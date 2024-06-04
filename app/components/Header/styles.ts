@@ -4,13 +4,10 @@ import { styled } from "styled-components";
 export const Container = styled.header`
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 10px;
-`;
-
-export const Flex = styled.div`
-  width: 100%;
 `;
 
 export const LogoName = styled.h1`

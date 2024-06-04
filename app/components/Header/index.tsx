@@ -4,6 +4,7 @@ import Link from "next/link";
 import Search from "../Search";
 import CartIcon from "../CartIcon";
 import Logo from "./logo";
+import { Flex } from "../Flex";
 
 export default function index() {
   return (
@@ -11,9 +12,9 @@ export default function index() {
       <Link href="/">
         <Logo />
       </Link>
-      <S.Flex />
+      <Flex />
       <Search />
-      <CartIcon />
+      <CartIcon quantity={0} />
     </S.Container>
   );
 }
