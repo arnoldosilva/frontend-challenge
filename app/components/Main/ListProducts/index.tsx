@@ -12,7 +12,7 @@ export default function index() {
         {products.map((product) => (
           <ProductCard
             key={product.id}
-            description={product.description}
+            name={product.name}
             price_in_cents={product.price_in_cents}
             image_url={product.image_url}
           />

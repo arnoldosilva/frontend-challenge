@@ -15,7 +15,7 @@ export const fetchProducts = async () => {
     JSON.stringify({
       query: `{
         allProducts {
-            id price_in_cents sales description image_url category
+            id name price_in_cents sales description image_url category
           }
       }`,
     })
