@@ -1,4 +1,5 @@
 "use client";
+import { themeColors } from "@/styles/COLORS";
 import { styled } from "styled-components";
 
 export const Container = styled.header`
@@ -12,5 +13,5 @@ export const Container = styled.header`
 
 export const LogoName = styled.h1`
   font-size: 3em;
-  color: #605f66;
+  color: ${themeColors.primary};
 `;

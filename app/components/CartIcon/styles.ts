@@ -1,4 +1,5 @@
 "use client";
+import { themeColors } from "@/styles/COLORS";
 import { styled } from "styled-components";
 
 export const Container = styled.div`
@@ -18,9 +19,9 @@ export const Quantity = styled.span`
   bottom: -10px;
   left: -10px;
   font-size: 12px;
-  color: #fff;
+  color: ${themeColors.white};
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background-color: #991a26;
+  background-color: ${themeColors.warning};
 `;
