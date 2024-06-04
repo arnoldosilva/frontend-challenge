@@ -2,7 +2,8 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  background-color: #d2d2;
-  height: 400;
-  width: auto;
+  background-color: #f1f0f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 `;

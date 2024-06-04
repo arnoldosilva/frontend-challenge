@@ -12,10 +12,14 @@ export const Input = styled.input`
   color: #333;
   background: #f3f5f4;
   margin: 0;
+  min-width: 250px;
   padding: 7px 8px;
   font-size: 14px;
-  color: inherit;
-  border: 1px solid transparent;
+  border: solid transparent;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const Button = styled.button`
