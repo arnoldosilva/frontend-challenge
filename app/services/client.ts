@@ -1,7 +1,7 @@
 import { useLoadingStore } from "@/store/useLoadingStore";
 import axios from "axios";
 const { setLoading } = useLoadingStore.getState();
-const url = "http://localhost:4000";
+const url = process.env.API ?? "http://localhost:4000";
 
 const api = axios.create({
   baseURL: url,
