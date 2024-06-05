@@ -2,6 +2,7 @@
 import api from "@/services/client";
 import { Product } from "@/types/Product";
 import { useProductsStore } from "@/store/useProductsStore";
+import { useFilterStore } from "@/store/useFilterStore";
 
 interface AllProductsResponse {
   data: {

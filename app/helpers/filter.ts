@@ -2,7 +2,7 @@ import { useFilterStore } from "@/store/useFilterStore";
 import { useProductsStore } from "@/store/useProductsStore";
 
 export const useSearchFilter = () => {
-  const { filter, setFilter } = useFilterStore.getState();
+  const { filter } = useFilterStore.getState();
   const { products } = useProductsStore.getState();
 
   const filteredProducts = products.filter((product) => {
@@ -12,21 +12,7 @@ export const useSearchFilter = () => {
     );
   });
 
-  return { filter, setFilter, filteredProducts };
-};
-
-export const useCategoryFilter = (category: CategoryType) => {
-  const { products } = useProductsStore.getState();
-
-  if (category === CategoryType.All) {
-    return { products };
-  } else {
-    const filteredProducts = products.filter((product) => {
-      return product.category.toLowerCase().includes(category);
-    });
-
-    return { filteredProducts };
-  }
+  return { filteredProducts };
 };
 
 export enum CategoryType {
