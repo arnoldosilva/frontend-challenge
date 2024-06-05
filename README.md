@@ -1,25 +1,14 @@
-![image](https://user-images.githubusercontent.com/40845824/121069742-3accdb00-c7a4-11eb-87d0-3dc47e433762.png)
-
-
 # 🚀 Front end challenge
 
-Bem-vindo(a). Este é o desafio Front end!
-
-O objetivo deste desafio é avaliar suas habilidades de programação.
-Quando sua solução estiver pronta, basta responder o e-mail que recebeu com o link do seu repo aqui no Github!
-Em seguida, enviaremos o feedback e as instruções dos próximos passos!
-
-Caso tenha alguma dúvida, nós estamos disponíveis no email *recrutamento@rocketseat.com.br*
-Bom desafio!
-
-> ⚠️ **É importante que o seu repo esteja público, caso contrário não iremos conseguir avaliar sua resposta**
+Este é um projeto de fonted test forked de https://github.com/Rocketseat/frontend-challenge 
 
 # 🧠 Contexto
 
 ![Protótipo](https://storage.googleapis.com/xesque-dev/challenge-images/prototipo.png?42)
 
 O desafio será implementar um e-commerce para venda de canecas e camisetas que deverá ter as seguintes funcionalidades:
-- [ ] Catálogo de produtos com paginação
+
+- [X] Catálogo de produtos com paginação
 - [ ] Filtragem produtos por categoria
 - [ ] Busca por nome do produto
 - [ ] Adicionar e remover produtos do carrinho
@@ -41,22 +30,19 @@ Chegou a hora de colocar a mão na massa!
 
 Além dos requisitos levantados acima, iremos olhar para os seguintes critérios durante a correção do desafio:
 
-- Gerenciamento de estado
-- Componentização
+- Gerenciamento de estado √
+- Componentização √
 - Responsividade
 - Preocupação com usabilidade
 - Preocupação com acessibilidade
 - Testes e2e
-- Padrões de código
-- Padrão de commits (_Conventional_)
+- Padrões de código √
+- Padrão de commits (_Conventional_) √
 
 ## 😎 Seria legal
+
 - Fazer deploy na vercel ou em outro local de sua preferência e disponibilizar um link de visualização, se necessário utilize esse servidor para a API GraphQL:  https://rocketseat-frontend-challenge.herokuapp.com/
 - Testes unitários
 - Utilização de cache do Next.js
 
 ---
-
-_O desafio acima foi cuidadosamente construído para propósitos de avaliação apenas. Já possuimos uma funcionalidade similar na nossa plataforma._
-
-Made with 💜 at Rocketseat

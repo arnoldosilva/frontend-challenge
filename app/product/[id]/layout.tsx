@@ -1,8 +1,7 @@
-import React from "react";
 import StyledComponentsRegistry from "@/lib/registry";
-import Providers from "./providers";
+import Providers from "../../providers";
 
-export default function RootLayout({
+export default function ProductLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
