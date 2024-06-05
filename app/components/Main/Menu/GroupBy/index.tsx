@@ -1,29 +1,42 @@
+import { CategoryType } from "@/helpers/filter";
 import { fetchCategories } from "@/services/fetchCategories";
+import { useFilterStore } from "@/store/useFilterStore";
 import { useProductsStore } from "@/store/useProductsStore";
-import React, { useEffect, useMemo } from "react";
-
+import React, { act, useEffect, useMemo } from "react";
 import Select from "react-select";
 
-interface Categories {
-  category: string;
-}
+const { clearFilter, orderByHighPrice, orderByLowPrice } =
+  useFilterStore.getState();
+
+const values = [
+  {
+    category: "Organizar por",
+    action: clearFilter,
+  },
+  {
+    category: "Novidades",
+    action: clearFilter,
+  },
+  {
+    category: "Preço: Maior - Menor",
+    action: orderByHighPrice,
+  },
+  {
+    category: "Preço: Menor - Maior",
+    action: orderByLowPrice,
+  },
+  {
+    category: "Mais vendidos",
+    action: clearFilter,
+  },
+];
 
 export default () => {
   const data = async () => await fetchCategories();
-  const { categories } = useProductsStore();
+
   useEffect(() => {
     data();
   }, []);
-
-  const values = useMemo(
-    () => [
-      {
-        category: "Organizar por",
-      },
-      ...categories,
-    ],
-    [categories]
-  );
 
   return (
     <Select
@@ -41,14 +54,15 @@ export default () => {
       }}
       defaultValue={values[0]}
       options={values}
-      formatOptionLabel={formatOptionLabel}
+      formatOptionLabel={(values) => formatOptionLabel(values)}
       isSearchable={false}
     />
   );
 };
 
-const formatOptionLabel = ({ category }) => (
+const formatOptionLabel = ({ category, action }) => (
   <div
+    onClick={() => action()}
     style={{
       display: "flex",
       flexGrow: 1,

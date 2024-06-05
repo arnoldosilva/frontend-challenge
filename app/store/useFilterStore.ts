@@ -7,12 +7,14 @@ type FilterStore = {
   filterByCategory: CategoryType;
   setFilterByCategory: (category: CategoryType) => void;
   filter: string;
-  products: Product[];
-  setFilter: (filter: string) => void;
+  products: Product[] | [];
+  clearFilter: () => void;
   setProducts: (products: Product[]) => void;
+  orderByHighPrice: () => void;
+  orderByLowPrice: () => void;
 };
 
-export const useFilterStore = create<FilterStore>((set) => ({
+export const useFilterStore = create<FilterStore>((set, get) => ({
   filter: "",
   filterByCategory: "all" as CategoryType,
   setFilterByCategory: (category) => {
@@ -31,7 +33,21 @@ export const useFilterStore = create<FilterStore>((set) => ({
     }
     set({ filterByCategory: category });
   },
-  setFilter: (filter) => set({ filter }),
   products: [],
   setProducts: (products) => set({ products }),
+  orderByHighPrice: () => {
+    const products = useProductsStore.getState().products;
+    get().clearFilter();
+    set(() => ({
+      products: products.sort((a, b) => b.price_in_cents - a.price_in_cents),
+    }));
+  },
+  orderByLowPrice: () => {
+    const products = useProductsStore.getState().products;
+    get().clearFilter();
+    set(() => ({
+      products: products.sort((a, b) => a.price_in_cents - b.price_in_cents),
+    }));
+  },
+  clearFilter: () => set({ filter: "", products: [] }),
 }));

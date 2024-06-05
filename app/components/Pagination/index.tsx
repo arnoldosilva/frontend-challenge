@@ -18,13 +18,13 @@ interface PaginationProps {
 }
 
 const Pagination = () => {
-  const { products: filtered, filter } = useFilterStore();
+  const { products: filtered } = useFilterStore();
   const { products } = useProductsStore();
   const [page, setPage] = useState(1);
 
   useLayoutEffect(() => {
     setPage(1);
-  }, [filter, filtered]);
+  }, [filtered]);
 
   const pages = useCallback(() => {
     if (filtered.length > 0) {
@@ -49,7 +49,7 @@ const Pagination = () => {
 
   const renderPagination = useCallback(
     () => pages().map((p, index) => <PaginationButton index={index} />),
-    [products, filtered, filter, page]
+    [products, filtered, page]
   );
 
   const Render = useMemo(() => {

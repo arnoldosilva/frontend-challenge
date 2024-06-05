@@ -10,9 +10,6 @@ import { themeColors } from "@/styles/COLORS";
 
 export default function CartResume() {
   const { cart } = useCartStore();
-
-  console.log(sum(cart.itens));
-
   return (
     <S.CartResumeListContainer>
       <Text weight={900}>Resumo do Pedido</Text>

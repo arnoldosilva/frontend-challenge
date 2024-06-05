@@ -39,6 +39,7 @@ export default function ProducItem({ item }: Props) {
             }
             options={options}
             defaultValue={options[item.quantity - 1]}
+            isSearchable={false}
           />
           <Text weight={900} fontSize="2">
             {displayCurrency(item.product.price_in_cents)}
