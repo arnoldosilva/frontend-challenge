@@ -28,7 +28,7 @@ export default function ProducItem({ item }: Props) {
       <S.ProductInfo>
         <S.ProductTitle>
           <Text fontSize="2">{item.product.name}</Text>
-          <Trash />
+          <Trash itemId={item.product.id} />
         </S.ProductTitle>
         <Text fontSize="1.2">{item.product.description}</Text>
         <Flex height="100%" />
