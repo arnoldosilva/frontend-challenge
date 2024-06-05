@@ -2,20 +2,18 @@ import React from "react";
 import * as S from "./styles";
 import { displayCurrency } from "@/helpers/currency";
 import { saira_init } from "@/styles/global";
-
-interface ProductCardProps {
-  name: string;
-  price_in_cents: number;
-  image_url: string;
-}
+import { Product } from "@/types/Product";
+import { useRouter } from "next/navigation";
 
 export default function index({
   name,
   price_in_cents,
   image_url,
-}: ProductCardProps) {
+  id,
+}: Product) {
+  const router = useRouter();
   return (
-    <S.Container>
+    <S.Container onClick={() => router.push(`/product/${id}`)}>
       <S.Image src={image_url} />
       <S.Content>
         <S.Title className={saira_init.className}>{name}</S.Title>

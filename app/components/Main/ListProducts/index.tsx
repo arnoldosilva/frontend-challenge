@@ -12,12 +12,7 @@ export default function index({ products }: ProductsProps) {
     return (
       <S.Container>
         {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            name={product.name}
-            price_in_cents={product.price_in_cents}
-            image_url={product.image_url}
-          />
+          <ProductCard key={product.id} {...product} />
         ))}
       </S.Container>
     );
