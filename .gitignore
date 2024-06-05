@@ -133,20 +133,4 @@ graphql_schema.json
 .graphql_cache
 .graphql_ppx_cache
 
-.next/cache/webpack/client-development/2.pack.gz
-.next/cache/webpack/client-development/3.pack.gz
-.next/cache/webpack/client-development/4.pack.gz
-.next/cache/webpack/client-development/5.pack.gz
-.next/cache/webpack/client-development/7.pack.gz
-.next/cache/webpack/client-development/10.pack.gz
-.next/cache/webpack/client-development/13.pack.gz
-.next/cache/webpack/server-development/2.pack.gz
-.next/cache/webpack/server-development/4.pack.gz
-.next/cache/webpack/server-development/7.pack.gz
-.next/cache/webpack/server-development/9.pack.gz
-.next/cache/webpack/server-development/10.pack.gz
-.next/cache/webpack/server-development/12.pack.gz
-.next/cache/webpack/server-development/13.pack.gz
-.next/cache/webpack/server-development/14.pack.gz
-.next/cache/webpack/server-development/15.pack.gz
-.next/cache/webpack/server-development/index.pack.gz.old
+.next/
