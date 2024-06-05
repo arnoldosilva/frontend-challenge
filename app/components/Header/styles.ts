@@ -11,6 +11,12 @@ export const Container = styled.header`
   padding: 10px 100px;
 `;
 
+export const LogoButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`;
+
 export const LogoName = styled.h1`
   font-size: 3em;
   color: ${themeColors.primary};

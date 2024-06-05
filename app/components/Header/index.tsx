@@ -5,13 +5,18 @@ import Search from "../Search";
 import CartIcon from "../CartIcon";
 import Logo from "./logo";
 import { Flex } from "../Flex";
+import { useRouter } from "next/navigation";
 
 export default function index() {
+  const router = useRouter();
+
+  const handleLogoClick = () => router.push("/");
+
   return (
     <S.Container>
-      <Link href="/">
+      <S.LogoButton onClick={handleLogoClick}>
         <Logo />
-      </Link>
+      </S.LogoButton>
       <Flex />
       <Search />
       <CartIcon quantity={0} />

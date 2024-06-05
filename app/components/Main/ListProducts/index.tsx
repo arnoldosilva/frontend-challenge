@@ -1,6 +1,5 @@
 import React from "react";
 import ProductCard from "@/components/ProductCard";
-import { useProductsStore } from "@/store/useProductsStore";
 import * as S from "./styles";
 import { Product } from "@/types/Product";
 
