@@ -14,6 +14,7 @@ export const CartProductListContainer = styled.div`
   width: 70%;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 20px;
 `;
 export const CartResumeListContainer = styled.div`
   display: flex;

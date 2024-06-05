@@ -1,11 +1,13 @@
+"use client";
 import { Item } from "@/types/Item";
-import React from "react";
+import React, { use } from "react";
 import * as S from "./styles";
 import Trash from "@/components/TrashButton";
 import { Text } from "@/components/Text";
 import { displayCurrency } from "@/helpers/currency";
 import { Flex } from "../Flex";
 import Select from "react-select";
+import { useCartStore } from "@/store/useCartStore";
 
 interface Props {
   item: Item;
@@ -32,9 +34,11 @@ export default function ProducItem({ item }: Props) {
         <Flex height="100%" />
         <S.ProductTitle>
           <Select
-            formatOptionLabel={formatOptionLabel}
+            formatOptionLabel={({ value }) =>
+              formatOptionLabel({ value, item })
+            }
             options={options}
-            defaultValue={options[0]}
+            defaultValue={options[item.quantity - 1]}
           />
           <Text weight={900} fontSize="2">
             {displayCurrency(item.product.price_in_cents)}
@@ -45,16 +49,25 @@ export default function ProducItem({ item }: Props) {
   );
 }
 
-const formatOptionLabel = ({ value }) => (
-  <div
-    style={{
-      display: "flex",
-      flexGrow: 1,
-      justifyContent: "space-between",
-      alignItems: "center",
-      fontSize: 14,
-    }}
-  >
-    <span>{value}</span>
-  </div>
-);
+interface Option {
+  value: number;
+  item: Item;
+}
+
+const formatOptionLabel = ({ value, item }: Option) => {
+  const { setItemQuantity } = useCartStore.getState();
+  return (
+    <div
+      onClick={() => setItemQuantity(item, value)}
+      style={{
+        display: "flex",
+        flexGrow: 1,
+        justifyContent: "space-between",
+        alignItems: "center",
+        fontSize: 14,
+      }}
+    >
+      <span>{value}</span>
+    </div>
+  );
+};
