@@ -1,8 +1,6 @@
-import { CategoryType } from "@/helpers/filter";
 import { fetchCategories } from "@/services/fetchCategories";
 import { useFilterStore } from "@/store/useFilterStore";
-import { useProductsStore } from "@/store/useProductsStore";
-import React, { act, useEffect, useMemo } from "react";
+import React, { act, useEffect } from "react";
 import Select from "react-select";
 
 const { clearFilter, orderByHighPrice, orderByLowPrice } =
@@ -41,13 +39,26 @@ export default () => {
   return (
     <Select
       styles={{
+        menu(base, props) {
+          return {
+            ...base,
+          };
+        },
         control(base, props) {
           return {
             ...base,
+            border: "none",
+            boxShadow: "none",
             backgroundColor: "transparent",
-            border: 0,
-            "::selected": {
-              border: 0,
+          };
+        },
+        option(base, props) {
+          return {
+            ...base,
+            color: "black",
+            backgroundColor: "white",
+            "&:hover": {
+              backgroundColor: "white",
             },
           };
         },

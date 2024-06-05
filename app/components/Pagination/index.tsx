@@ -22,7 +22,7 @@ const Pagination = () => {
   const { products } = useProductsStore();
   const [page, setPage] = useState(1);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setPage(1);
   }, [filtered]);
 
@@ -48,21 +48,17 @@ const Pagination = () => {
   );
 
   const renderPagination = useCallback(
-    () => pages().map((p, index) => <PaginationButton index={index} />),
+    () => pages().map((_, index) => <PaginationButton index={index} />),
     [products, filtered, page]
   );
 
-  const Render = useMemo(() => {
-    return (
-      <>
-        <S.Container>{renderPagination()}</S.Container>
-        <Products products={pages()[page - 1]} />
-        <S.Container>{renderPagination()}</S.Container>
-      </>
-    );
-  }, [filtered, products, page]);
-
-  return Render;
+  return (
+    <>
+      <S.Container>{renderPagination()}</S.Container>
+      <Products products={pages()[page - 1]} />
+      <S.Container>{renderPagination()}</S.Container>
+    </>
+  );
 };
 
 export default Pagination;

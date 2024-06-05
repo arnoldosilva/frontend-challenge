@@ -29,3 +29,11 @@ export const Button = styled.button`
   padding: 7px 8px;
   cursor: pointer;
 `;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 20px;
+`;
