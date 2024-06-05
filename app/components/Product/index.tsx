@@ -21,7 +21,7 @@ export default function index() {
   return (
     <S.Container>
       <BackButtom />
-      <ProductView product={product} />;
+      <ProductView product={product} />
     </S.Container>
   );
 }

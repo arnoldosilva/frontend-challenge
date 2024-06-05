@@ -1,6 +1,11 @@
 "use client";
 import { styled } from "styled-components";
 
-export const Flex = styled.div`
+interface FlexProps {
+  height?: string;
+}
+
+export const Flex = styled.div<FlexProps>`
   width: 100%;
+  height: ${(props) => props.height || "auto"};
 `;

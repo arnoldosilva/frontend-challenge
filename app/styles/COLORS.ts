@@ -3,7 +3,7 @@ export const themeColors = {
   secondary: "#FFA585",
   warning: "#991a26",
   success: "#00b341",
-  info: "#0070f3",
+  info: "#115D8C",
   black: "#000000",
   white: "#ffffff",
   gray: "#E9E9F0",
