@@ -9,3 +9,10 @@ export const Container = styled.main`
   flex-grow: 1;
   padding: 20px 100px;
 `;
+
+export const NotFoundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+`;

@@ -8,12 +8,19 @@ import { FaShoppingBag } from "react-icons/fa";
 import { themeColors } from "@/styles/COLORS";
 import { Flex } from "../Flex";
 import { Text } from "@/components/Text";
+import { useCartStore } from "@/store/useCartStore";
 
 interface ProductViewProps {
   product: Product;
 }
 
 export default function ProductView({ product }: ProductViewProps) {
+  const { addItem } = useCartStore();
+
+  const handleAddItem = () => {
+    addItem({ product, quantity: 1 });
+  };
+
   if (!product) {
     return <NotFound />;
   }
@@ -35,7 +42,7 @@ export default function ProductView({ product }: ProductViewProps) {
         <Text uppercase={true}>Descrição</Text>
         <Text>{product.description}</Text>
         <Flex height="100%" />
-        <S.Button>
+        <S.Button onClick={handleAddItem}>
           <FaShoppingBag size={15} color={themeColors.white} />
           Adicionar ao carrinho
         </S.Button>

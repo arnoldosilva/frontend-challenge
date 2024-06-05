@@ -16,7 +16,7 @@ export const Quantity = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  padding: 10px;
   bottom: -10px;
   left: -10px;
   font-size: 12px;
