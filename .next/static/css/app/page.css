@@ -1,0 +1,117 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/styles/global.ts","import":"Saira","arguments":[{"subsets":["latin"],"display":"swap","variable":"--saira","weight":"100"}],"variableName":"saira_init"} ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* vietnamese */
+@font-face {
+  font-family: '__Saira_e07da0';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/_next/static/media/95038e9065431084-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Saira_e07da0';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/_next/static/media/22060c355cb5d97b-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Saira_e07da0';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/_next/static/media/63175fe879c190ef-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Saira_Fallback_e07da0';src: local("Arial");ascent-override: 109.52%;descent-override: 42.36%;line-gap-override: 0.00%;size-adjust: 103.63%
+}.__className_e07da0 {font-family: '__Saira_e07da0', '__Saira_Fallback_e07da0';font-weight: 100;font-style: normal
+}.__variable_e07da0 {--saira: '__Saira_e07da0', '__Saira_Fallback_e07da0'
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/components/ProductCard/styles.ts","import":"Saira","arguments":[{"subsets":["latin"],"display":"swap","variable":"--saira","weight":"600"}],"variableName":"saira_init"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* vietnamese */
+@font-face {
+  font-family: '__Saira_c0e9d2';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/_next/static/media/9c3955aed4322b50-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Saira_c0e9d2';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/_next/static/media/9fd9b2090ab4af10-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Saira_c0e9d2';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/_next/static/media/8682ed4e66a41261-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Saira_Fallback_c0e9d2';src: local("Arial");ascent-override: 109.52%;descent-override: 42.36%;line-gap-override: 0.00%;size-adjust: 103.63%
+}.__className_c0e9d2 {font-family: '__Saira_c0e9d2', '__Saira_Fallback_c0e9d2';font-weight: 600;font-style: normal
+}.__variable_c0e9d2 {--saira: '__Saira_c0e9d2', '__Saira_Fallback_c0e9d2'
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/components/Header/layout.ts","import":"Black_Ops_One","arguments":[{"subsets":["latin"],"display":"swap","variable":"--black_Ops_One","weight":"400"}],"variableName":"black_Ops_One_init"} ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
+@font-face {
+  font-family: '__Black_Ops_One_fea29f';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/6bbc85eab4c5b2c3-s.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Black_Ops_One_fea29f';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/6b1bc5889048d1d0-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Black_Ops_One_fea29f';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/c903598a4f5aa62c-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Black_Ops_One_fea29f';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/e4843cc3ab8a4ba1-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Black_Ops_One_Fallback_fea29f';src: local("Arial");ascent-override: 74.14%;descent-override: 27.30%;line-gap-override: 0.00%;size-adjust: 123.22%
+}.__className_fea29f {font-family: '__Black_Ops_One_fea29f', '__Black_Ops_One_Fallback_fea29f';font-weight: 400;font-style: normal
+}.__variable_fea29f {--black_Ops_One: '__Black_Ops_One_fea29f', '__Black_Ops_One_Fallback_fea29f'
+}
+
