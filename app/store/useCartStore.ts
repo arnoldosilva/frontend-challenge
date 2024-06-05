@@ -53,7 +53,7 @@ export const useCartStore = create<CartStore>((set) => ({
       },
     })),
   clearCart: () =>
-    set((state) => ({
+    set(() => ({
       cart: {
         itens: [],
         service_fee: 40,

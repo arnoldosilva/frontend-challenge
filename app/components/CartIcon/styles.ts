@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 15px;
+  cursor: pointer;
 `;
 
 export const Quantity = styled.span`
