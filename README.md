@@ -1,6 +1,6 @@
 # 🚀 Front end challenge
 
-Este é um projeto de fonted test forked de https://github.com/Rocketseat/frontend-challenge 
+Este é um projeto de fonted test forked de https://github.com/Rocketseat/frontend-challenge
 
 # 🧠 Contexto
 
@@ -9,22 +9,22 @@ Este é um projeto de fonted test forked de https://github.com/Rocketseat/fronte
 O desafio será implementar um e-commerce para venda de canecas e camisetas que deverá ter as seguintes funcionalidades:
 
 - [X] Catálogo de produtos com paginação
-- [ ] Filtragem produtos por categoria
-- [ ] Busca por nome do produto
-- [ ] Adicionar e remover produtos do carrinho
+- [X] Filtragem produtos por categoria
+- [X] Busca por nome do produto
+- [X] Adicionar e remover produtos do carrinho
 - [ ] Finalizar compra
 
 ## 📋 Instruções
 
 Chegou a hora de colocar a mão na massa!
 
-- Siga [esse protótipo](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449)
-- Utilize Next.js e Typescript
-- Faça a estilização com styled-components
+- Siga [esse protótipo](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449) √
+- Utilize Next.js e Typescript √
+- Faça a estilização com styled-components √
 - Utilize o local storage para gerenciar o carrinho
-- Por favor, inclua no README as instruções de instalação do projeto
+- Por favor, inclua no README as instruções de instalação do projeto 
 - Sinta-se livre para incluir quaisquer observações
-- Consuma nossa **API GraphQL** rodando o comando `yarn start` na pasta `api`
+- Consuma nossa **API GraphQL** rodando o comando `yarn start` na pasta `api` √
 
 ## ✔️ Critérios de Avaliação
 
@@ -46,3 +46,13 @@ Além dos requisitos levantados acima, iremos olhar para os seguintes critérios
 - Utilização de cache do Next.js
 
 ---
+
+### Instalação
+
+Para instalar o projeto é necessário o NodeJs, projeto desenvolvido na versão 20.10.0 LTS
+
+```
+npm install
+npm run dev
+````
+O aplicativo irá subir automaticamente a aplicação na porta 3000 e o servidor GraphQl da Api na porta 4000
