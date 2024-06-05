@@ -2,10 +2,13 @@ import React from "react";
 import ProductCard from "@/components/ProductCard";
 import { useProductsStore } from "@/store/useProductsStore";
 import * as S from "./styles";
+import { Product } from "@/types/Product";
 
-export default function index() {
-  const { products } = useProductsStore();
+interface ProductsProps {
+  products: Product[];
+}
 
+export default function index({ products }: ProductsProps) {
   if (products && products.length > 0) {
     return (
       <S.Container>

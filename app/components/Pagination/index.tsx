@@ -1,12 +1,30 @@
 "use client";
 import { useFilterStore } from "@/store/useFilterStore";
 import { useProductsStore } from "@/store/useProductsStore";
-import { Product } from "@/types/Product";
-import React, { useCallback, useMemo } from "react";
+import React, {
+  PropsWithChildren,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useState,
+} from "react";
+import Products from "@/components/Main/ListProducts";
 import _ from "lodash";
-export default function index() {
-  const { products: filtered } = useFilterStore();
+import * as S from "./styles";
+
+interface PaginationProps {
+  index: number;
+}
+
+const Pagination = () => {
+  const { products: filtered, filter } = useFilterStore();
   const { products } = useProductsStore();
+  const [page, setPage] = useState(1);
+
+  useLayoutEffect(() => {
+    setPage(1);
+  }, [filter, filtered]);
 
   const pages = useCallback(() => {
     if (filtered.length > 0) {
@@ -16,11 +34,35 @@ export default function index() {
     }
   }, [products, filtered]);
 
-  console.log(pages());
+  const PaginationButton = ({ index }: PaginationProps) => (
+    <div key={index}>
+      <S.Button
+        onClick={() => {
+          setPage(index + 1);
+        }}
+        selected={index + 1 === page}
+      >
+        {index + 1}
+      </S.Button>
+    </div>
+  );
 
-  const render = useMemo(() => {
-    return <div>index</div>;
-  }, [products, filtered]);
+  const renderPagination = useCallback(
+    () => pages().map((p, index) => <PaginationButton index={index} />),
+    [products, filtered, filter, page]
+  );
 
-  return render;
-}
+  const Render = useMemo(() => {
+    return (
+      <>
+        <S.Container>{renderPagination()}</S.Container>
+        <Products products={pages()[page - 1]} />
+        <S.Container>{renderPagination()}</S.Container>
+      </>
+    );
+  }, [filtered, products, page]);
+
+  return Render;
+};
+
+export default Pagination;

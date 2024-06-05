@@ -16,7 +16,7 @@ const Footer = () => {
         </a>
       </p>
       <p>
-        <span>{` © ${year} - Livre uso sobre licensa `}</span>
+        <span>{` © ${year} - Livre uso sob licensa `}</span>
         <a href="https://mit-license.org/" target="_blank" rel="noreferrer">
           MIT
         </a>
