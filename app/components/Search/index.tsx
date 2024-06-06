@@ -8,7 +8,6 @@ import { saira_init } from "@/styles/global";
 import * as S from "./styles";
 import { themeColors } from "@/styles/COLORS";
 import { Product } from "@/types/Product";
-import { useMediaQuery } from "react-responsive";
 
 export default function SearchBar() {
   const { products } = useProductsStore();
