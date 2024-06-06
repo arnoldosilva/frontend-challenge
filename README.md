@@ -22,7 +22,7 @@ Chegou a hora de colocar a mão na massa!
 - Utilize Next.js e Typescript √
 - Faça a estilização com styled-components √
 - Utilize o local storage para gerenciar o carrinho
-- Por favor, inclua no README as instruções de instalação do projeto 
+- Por favor, inclua no README as instruções de instalação do projeto √
 - Sinta-se livre para incluir quaisquer observações
 - Consuma nossa **API GraphQL** rodando o comando `yarn start` na pasta `api` √
 
@@ -32,7 +32,7 @@ Além dos requisitos levantados acima, iremos olhar para os seguintes critérios
 
 - Gerenciamento de estado √
 - Componentização √
-- Responsividade
+- Responsividade √
 - Preocupação com usabilidade
 - Preocupação com acessibilidade
 - Testes e2e
@@ -51,8 +51,11 @@ Além dos requisitos levantados acima, iremos olhar para os seguintes critérios
 
 Para instalar o projeto é necessário o NodeJs, projeto desenvolvido na versão 20.10.0 LTS
 
-```
+```sh {"id":"01HZPE89G0RV70WJS4H8QG10T0"}
 npm install
 npm run dev
-````
+```
+
 O aplicativo irá subir automaticamente a aplicação na porta 3000 e o servidor GraphQl da Api na porta 4000
+
+Deploy realizado na Vercel: https://frontend-challenge-5tzjnes2b-arnoldosilvas-projects.vercel.app/

@@ -38,6 +38,7 @@ export const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 500px;
 `;
 
 export const ProductTitle = styled.h2`
