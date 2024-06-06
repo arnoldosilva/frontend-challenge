@@ -7,6 +7,8 @@ const api = axios.create({
   baseURL: url,
   headers: {
     "Content-Type": "application/json",
+    "Access-Control-Allow-Origin":
+      "http://localhost:4000 , http://localhost:3000 ,https://checkout.stripe.com",
   },
 });
 

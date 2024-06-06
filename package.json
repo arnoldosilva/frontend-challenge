@@ -51,5 +51,6 @@
     "jest-environment-jsdom": "^29.7.0",
     "json-graphql-server": "^3.0.1",
     "typescript": "^5.4.5"
-  }
+  },
+  "proxy": "https://checkout.stripe.com"
 }

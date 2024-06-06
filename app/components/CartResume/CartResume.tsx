@@ -7,9 +7,26 @@ import { displayCurrency } from "@/helpers/currency";
 import { Flex } from "../Flex";
 import Link from "next/link";
 import { themeColors } from "@/styles/COLORS";
+import api from "@/services/client";
+
+interface stripeResponse {
+  url: string;
+}
 
 export default function CartResume() {
   const { cart } = useCartStore();
+
+  const checkout = async () => {
+    if (cart.itens.length > 0) {
+      const { data } = await api.post<stripeResponse>("/checkout", {
+        items: [...cart.itens],
+      });
+      if (data) {
+        window.location.href = data.url;
+      }
+    }
+  };
+
   return (
     <S.CartResumeListContainer>
       <Text weight={900}>Resumo do Pedido</Text>
@@ -45,7 +62,7 @@ export default function CartResume() {
         </Text>
       </S.Line>
 
-      <S.BuyButton>
+      <S.BuyButton onClick={checkout}>
         <Text uppercase color={themeColors.white}>
           Finalizar Compra
         </Text>
