@@ -48,7 +48,8 @@ const Pagination = () => {
   );
 
   const renderPagination = useCallback(
-    () => pages().map((_, index) => <PaginationButton index={index} />),
+    () =>
+      pages().map((_, index) => <PaginationButton key={index} index={index} />),
     [products, filtered, page]
   );
 

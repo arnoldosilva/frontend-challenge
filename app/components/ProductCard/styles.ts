@@ -10,13 +10,11 @@ export const saira_init = Saira({
 });
 
 export const Container = styled.button`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   background-color: ${themeColors.white};
   border-radius: 3%;
   border: 0;
   cursor: pointer;
+  transition: 0.3s;
 `;
 
 export const Title = styled.h6`

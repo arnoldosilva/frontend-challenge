@@ -7,5 +7,5 @@ export const Container = styled.main`
   display: flex;
   gap: 20px;
   flex-direction: column;
-  padding: 20px 100px;
+  padding: 20px clamp(5px, 5%, 50px);
 `;
