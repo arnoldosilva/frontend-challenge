@@ -44,7 +44,9 @@ export default function ProductView({ product }: ProductViewProps) {
         <Flex height="100%" />
         <S.Button onClick={handleAddItem}>
           <FaShoppingBag size={15} color={themeColors.white} />
-          Adicionar ao carrinho
+          <Text color={themeColors.white} fontSize="2">
+            Adicionar ao carrinho
+          </Text>
         </S.Button>
       </S.ProductInfo>
     </S.ViewContainer>
