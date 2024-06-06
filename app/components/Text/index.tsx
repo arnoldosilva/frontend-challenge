@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { Saira } from "next/font/google";
 import * as S from "./styles";
 
