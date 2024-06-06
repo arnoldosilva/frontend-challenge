@@ -7,7 +7,7 @@ export const Container = styled.main`
   gap: 20px;
   flex-direction: column;
   flex-grow: 1;
-  padding: 20px clamp(5px, 5%, 50px);
+  padding: 20px clamp(5px, 5%, 200px);
 `;
 
 export const NotFoundContainer = styled.div`
@@ -26,12 +26,12 @@ export const ViewContainer = styled.div`
 
 export const ProductImage = styled.img`
   display: flex;
-  resize: both;
-  max-width: 40vw;
-  max-height: 50vh;
-  min-width: 400px;
+  max-width: fit-content;
   flex-grow: 1;
   object-fit: contain;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const ProductInfo = styled.div`

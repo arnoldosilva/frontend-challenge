@@ -1,33 +1,20 @@
 "use client";
 import { styled } from "styled-components";
 
-export const Form = styled.form`
-  color: #f3f5f4;
-  display: flex;
-  padding: 2px;
-  border: 1px solid currentColor;
-  border-radius: 5px;
-`;
-export const Input = styled.input`
-  color: #333;
-  background: #f3f5f4;
-  margin: 0;
-  min-width: 250px;
-  padding: 7px 8px;
-  font-size: 14px;
-  border: solid transparent;
-
-  &:focus {
-    outline: none;
+export const Form = styled.div`
+  @media (max-width: 768px) {
+    min-width: 100%;
+    order: 1;
   }
 `;
 
-export const Button = styled.button`
-  background-color: #f3f5f4;
-  color: #333;
-  border: none;
-  padding: 7px 8px;
-  cursor: pointer;
+export const Item = styled.div`
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  width: 200;
+  font-size: 14;
 `;
 
 export const Icon = styled.div`
