@@ -22,6 +22,7 @@ export default function CartResume() {
         items: [...cart.itens],
       });
       if (data) {
+        // console.log(data);
         window.location.href = data.url;
       }
     }
