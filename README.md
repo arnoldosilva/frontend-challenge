@@ -56,6 +56,14 @@ npm install
 npm run dev
 ```
 
-O aplicativo irá subir automaticamente a aplicação na porta 3000 e o servidor GraphQl da Api na porta 4000
+O aplicativo irá subir automaticamente a aplicação na porta 3000 
+
+para pagamentos utilizar os seguintes cartões:
+
+4242 4242 4242 4242 Succeeds and immediately processes the payment.
+
+4000 0000 0000 3220 Requires 3D Secure 2 authentication for a successful payment.
+
+4000 0000 0000 9995 Always fails with a decline code of insufficient_funds.
 
 Deploy realizado na Vercel: https://frontend-challenge-5tzjnes2b-arnoldosilvas-projects.vercel.app/

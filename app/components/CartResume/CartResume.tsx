@@ -10,7 +10,9 @@ import { themeColors } from "@/styles/COLORS";
 import api from "@/services/client";
 
 interface stripeResponse {
-  url: string;
+  session: {
+    url: string;
+  };
 }
 
 export default function CartResume() {
@@ -22,8 +24,7 @@ export default function CartResume() {
         items: [...cart.itens],
       });
       if (data) {
-        // console.log(data);
-        window.location.href = data.url;
+        window.location.href = data.session.url;
       }
     }
   };

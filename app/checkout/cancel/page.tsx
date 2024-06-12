@@ -1,5 +1,14 @@
+"use client";
 import React from "react";
+import Cart from "@/cart";
+import Constructor from "@/Constructor";
 
 export default function Cancel() {
-  return <div>Cancel</div>;
+  return (
+    <>
+      <Constructor>
+        <Cart />
+      </Constructor>
+    </>
+  );
 }
